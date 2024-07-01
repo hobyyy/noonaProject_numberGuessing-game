@@ -1,0 +1,52 @@
+/* up gif
+https://media1.giphy.com/media/vOsRhrnqdyFnPp2OrG/200.webp?cid=ecf05e4774iadpetukt59trksn35yipi1oit8p4ynjhldpbp&ep=v1_gifs_search&rid=200.webp&ct=g */
+
+/* down gif
+https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXI1aHU3MW40M2x4aDM3ZmJ4MzkxN3o1cGZueW16MHlxbGxraDBlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z835RsRqQHOlC4rsBr/giphy.gif */
+
+body {
+  /* position: absolute; */
+  margin-top: 50px;
+  height: 100vh;
+  background-image: url(https://project.groupidd.com/assets/images/case-studies/11/img_visual.jpg);
+  background-size: cover;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+
+}
+
+.container {
+  background-color: rgba(247, 243, 242, 0.7);
+  border: solid 10px white;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.main-img {
+  width: 20vw;
+  height: 20vh
+}
+
+button {
+  width: 100px;
+  height: 80px;
+  border: 0px;
+  border-radius: 40px;
+}
+.main-color {
+  background-color: #2db2e7;
+}
+.second-color {
+  background-color: #eec7da;
+}
+#user-input {
+  height: 80px;
+  font-size: 1vw;
+  margin-right: 20px;
+  text-align: center;
+}
+.reset-button_area {
+  display: flex;
+  justify-content: center;
+}
