@@ -36,17 +36,17 @@ function play() {   // 숫자 추측하는 main 함수
   if(input>computer_num) {
     console.log('Down')
     result_text.textContent = "Down!";
-    resultAreaImg.src = "https://media1.giphy.com/media/vOsRhrnqdyFnPp2OrG/200.webp?cid=ecf05e4774iadpetukt59trksn35yipi1oit8p4ynjhldpbp&ep=v1_gifs_search&rid=200.webp&ct=g"
+    resultAreaImg.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXI1aHU3MW40M2x4aDM3ZmJ4MzkxN3o1cGZueW16MHlxbGxraDBlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z835RsRqQHOlC4rsBr/giphy.gif"
   }else if(input<computer_num) {
     console.log('Up')
     result_text.textContent = "Up!";
-    resultAreaImg.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXI1aHU3MW40M2x4aDM3ZmJ4MzkxN3o1cGZueW16MHlxbGxraDBlciZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/z835RsRqQHOlC4rsBr/giphy.gif"
+    resultAreaImg.src = "https://media1.giphy.com/media/vOsRhrnqdyFnPp2OrG/200.webp?cid=ecf05e4774iadpetukt59trksn35yipi1oit8p4ynjhldpbp&ep=v1_gifs_search&rid=200.webp&ct=g"
   }else {
     console.log('Right')
     result_text.textContent = "That's right!";
     gameover = true;
   }
-  
+
   if(chances==0) {
     gameover = true;
   }
@@ -58,11 +58,13 @@ function play() {   // 숫자 추측하는 main 함수
 
 function reset() {  // 리셋 함수
   pickRandomNumber();
-  
+
   user_input.value = "";
   user_inputList = [];
   play_button.disabled = false;
   gameover = false;
+  resultAreaImg.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG1jY3JvYXF2ZHM2a211cG9hdG5iN25wZzJsN2h1bXA5cDR2MGg5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7527pa7qs9kCG78A/giphy.gif"
+    
   result_text.textContent = "죽기 싫다면 맞춰라";
   chances = 5;
   chance_area.innerHTML = `남은 기회 : ${chances}번`;
