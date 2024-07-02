@@ -4,14 +4,16 @@ let chance_area = document.getElementById("chance-area");
 let user_input = document.getElementById("user-input");
 let play_button = document.getElementById("play-button");
 let button_reset = document.getElementById("button-reset");
+let button_answer = document.getElementById("button-answer");
 
 let computer_num = 0;
-let chances = 5;
+let chances = 3;
 let user_inputList = [];
 let gameover = false;
 
 play_button.addEventListener("click", play);
 button_reset.addEventListener("click", reset);
+button_answer.addEventListener("click", function() { button_answer.textContent = computer_num});
 user_input.addEventListener("focus", function() { user_input.value = ""})
 
 function pickRandomNumber() { // 랜덤 숫자 뽑는 함수
@@ -66,6 +68,7 @@ function reset() {  // 리셋 함수
   resultAreaImg.src = "https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbG1jY3JvYXF2ZHM2a211cG9hdG5iN25wZzJsN2h1bXA5cDR2MGg5eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7527pa7qs9kCG78A/giphy.gif"
     
   result_text.textContent = "죽기 싫다면 맞춰라";
+  button_answer.textContent = "정답??"
   chances = 5;
   chance_area.innerHTML = `남은 기회 : ${chances}번`;
 }
